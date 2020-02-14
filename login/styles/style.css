@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.login {
+    margin: 0px;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+h1 {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+h1:hover {
+    opacity: 0;
+    cursor: none;
+}
+
+#bg_side {
+    width: 50%;
+    background-image: url('../cats.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.general_form {
+    flex: 1;
+    height: 100vh;
+    width: 46vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    background: #3e3e3e;
+    color: white;
+}
+
+.form_input {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    outline-width: 0px;
+    border-radius: 25px;
+}
+
+.submit_btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    background: #ce8b54;
+    cursor: pointer;
+    border: 0px;
+    margin-bottom: 10px;
+    outline-width: 0px;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.first {
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ce8b54;
+    flex-direction: column;
+    justify-content: center;
+    animation: 0.7s fadeOut forwards;
+    animation-delay: 1s;
+}
+
+.second {
+    opacity: 0;
+    animation: 0.5s fadeIn forwards 1.3s;
+}
+
+
+#posts_btn {
+    width: 200px;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px;
+    background: #3e3e3e;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    100% {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    100% {opacity: 0;}
+}

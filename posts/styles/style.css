@@ -1,0 +1,64 @@
+.post_content {
+    width: 80vw;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.photo {
+    width: 50%;
+}
+
+
+@media(max-width: 800px) {
+    .photo {
+        width: 100%;
+    }
+}
+
+.comment {
+    list-style-type: none;
+    background: #3e3e3e;
+    font-size: 20px;
+    width: 79vw;
+    padding: 1vw;
+    color: white;
+    margin: auto;
+    margin-bottom: 1px;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+form {
+    width: 81vw;
+    margin: auto;
+    padding: 20px;
+}
+
+form input {
+    width: 81vw;
+    height: 30px;
+    font-size: 20px;
+    margin: auto;
+    outline-color: #3e3e3e;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+

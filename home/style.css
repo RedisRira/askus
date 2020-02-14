@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: url("thumb.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: changePic1 10s infinite;
+    animation-delay: 1s;
+}
+
+.container h1 {
+    font-family: "Comic Sans MS";
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    width: 50vw;
+    margin-left: 25vw;
+    color: white !important;
+    background: #3e3e3e;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.container h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes changePic1 {
+    30% {background-image: url("thumb2.jpg");}
+    60% {background-image: url("thumb1.jpg");}
+    100% {background-image: url("thumb.jpg");}
+}
+
+@keyframes changePic2 {
+    100% {background-image: url("thumb2.jpg");}
+}
+
+@keyframes changePic3 {
+    100% {background-image: url("thumb2.jpg");}
+}
